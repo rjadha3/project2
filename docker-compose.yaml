@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  php-webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-webapp
+    ports:
+      - "8000:5000"
+    restart: unless-stopped
+
