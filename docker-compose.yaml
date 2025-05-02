@@ -8,5 +8,5 @@ services:
     container_name: php-webapp
     ports:
       - "8000:5000"
-    restart: unless-stopped
+   # restart: unless-stopped
 
